@@ -28,7 +28,7 @@ var chartGroup = svg.append('g')
 var chosenXAxis = 'poverty',
 	chosenYAxis = 'healthcare';
 
-d3.csv("../assets/data/data.csv").then( data =>{
+d3.csv("../USA-Health-Factor-Demographics/assets/data/data.csv").then( data =>{
 	data.forEach( d =>{
 		d.poverty = +d.poverty;
 		d.age = +d.age;
